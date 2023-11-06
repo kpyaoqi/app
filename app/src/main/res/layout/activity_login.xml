@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/colorWhite">
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="欢迎"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/colorBlueLight"/>
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="486dp"
+        android:layout_height="183dp"
+        android:layout_below="@id/tv_title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/a2" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/iv_logo"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_username"
+        android:drawableStart="@drawable/icon_user"
+        android:drawablePadding="8dp"
+        android:hint="请输入学号"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入密码"
+        android:textSize="25sp"
+        android:drawableStart="@drawable/icon_password"
+        android:drawablePadding="8dp"
+        android:background="@drawable/bg_username"
+        android:textColor="@color/colorBlack"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/et_username"
+        android:layout_marginTop="20dp"/>
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="欢迎登录"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textColor="@color/colorBrown"-->
+        <!--android:layout_below="@+id/et_password"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:layout_marginStart="5dp"/>-->
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="242dp"
+        android:text="新用户注册"
+        android:textColor="@color/colorGray"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_register"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-254dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_login"
+        android:text="登录"
+        android:textSize="25sp" />
+</RelativeLayout>
